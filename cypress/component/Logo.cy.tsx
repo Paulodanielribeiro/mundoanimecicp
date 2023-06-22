@@ -10,7 +10,7 @@ describe('<Logo />', () => {
       </BrowserRouter>
     );
 
-    // cy.get('[data-cy="logo-wrapper"]').should('have.css', 'filter: invert(0)');
+   
     cy.get('[data-cy="logo-wrapper"]').should('have.css', 'filter').and('eq', 'invert(0)');
   });
 
